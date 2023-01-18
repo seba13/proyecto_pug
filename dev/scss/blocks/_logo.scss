@@ -1,0 +1,37 @@
+
+
+
+.logo
+{
+    margin-left: 20px;
+    min-width: 50px;
+    width: 50px;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+    // pointer-events: none;
+
+    &__img
+    {
+        max-height: 80%;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    @include laptop
+    {
+        &
+        {
+            height: 90%;
+        }
+
+        &__img
+        {
+            max-height: 100%;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+
+/*
+    variables media querys
+*/
+
+$mobile: 360px;
+$tablet: 361px;
+$laptop: 1024px;
+$desktop: 1400px;
+
+
+@mixin mobile {
+    @media screen and (max-width: $mobile){
+        /*
+            @content: cuando utilicemos la funcion el contenido se inserta acá
+        */
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: $tablet){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (min-width: $laptop){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop){
+        @content;
+    }
+}

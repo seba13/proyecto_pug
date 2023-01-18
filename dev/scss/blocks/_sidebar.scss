@@ -1,0 +1,9 @@
+
+
+.sidebar
+{   
+    @include laptop
+    {
+        grid-row: 1/3;
+    }
+}

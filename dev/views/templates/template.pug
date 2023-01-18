@@ -1,0 +1,39 @@
+include ../config/config.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title proyecto Pug 
+        link(rel="stylesheet", href="./css/styles.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  crossorigin="anonymous")
+    body 
+        header#header.header
+            .topbar 
+                a(href="/").logo
+                    img(src="./assets/img/logo.png", alt="web logo").logo__img 
+                .topbar__submenu
+                    .topbar__icon 
+                        i.fa.fa-user
+                        span Login
+                    .topbar__icon 
+                        i.fa.fa-user-plus
+                        span Register
+                    .toggle-menu
+                        #toggle-menu.toggle-menu__icon
+                            span.toggle-menu__hamburger
+                            span.toggle-menu__hamburger
+                            span.toggle-menu__hamburger
+        aside#sidebar.sidebar
+            nav#menu
+                ul.menu
+                    each link in menu 
+                        li: a(href='/')=link
+        main.main 
+
+        block index
+        
+
+
+        script(src="./js/main.js") 

@@ -1,0 +1,21 @@
+
+
+*
+{
+    font-family: "Roboto", "sans-serif";
+}
+
+body 
+{
+    min-height: 100vh;
+    
+    /*
+        Sólo se aplica si estamos en disposito escritorio/ laptop
+    */
+    @include laptop
+    {
+        display: grid;
+        grid-template-columns: 15% 1fr;
+        grid-template-rows: 60px 1fr;
+    }
+}

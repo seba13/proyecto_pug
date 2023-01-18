@@ -1,0 +1,62 @@
+
+nav
+{
+    height: calc(100vh - $topbar-height-mobile);
+    background-color: $dark-color;
+    transition: transform .56s cubic-bezier(0.52, 0.16, 0.24, 1);
+    transform: translate(0,-100%);
+    &.active
+    {
+        transform: translate(0);
+    }
+
+    .menu 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        @include reset-list;
+
+
+        li
+        {
+            width: 90%;
+            padding: 20px 0px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #fff;
+            a
+            {
+                letter-spacing: 2px;
+                font-size: 1.5rem;
+                font-weight: $font-regular;
+                text-decoration: none;
+                color: #ced4da;
+            } 
+        }
+         
+    }
+    @include laptop
+    {
+
+        
+        height: calc(100%);
+        background-color: #ced4da;
+        transform: translate(0);
+        wmargin-top: 60px;
+        padding-top: 100px;   
+
+        .menu
+        {
+            li
+            {
+
+                a
+                {
+                    color: $dark-color;
+                }
+            }
+        }
+    }
+}

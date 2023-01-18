@@ -1,0 +1,23 @@
+/* 
+    importar archivos en el scss principal 
+*/
+/*
+    los mixins (funciones) van en la parte superior para poder ser utilizados en las demas etiquetas y clases
+*/
+@import 'config/colors';
+@import 'config/fonts';
+@import 'config/var';
+
+@import 'mixins/breakpoints';
+@import 'mixins/reset-list';
+
+@import 'base/normalize';
+@import 'base/base';
+
+@import 'blocks/header';
+@import 'blocks/topbar';
+@import 'blocks/menu';
+@import 'blocks/logo';
+@import 'blocks/toggle-menu';
+@import 'blocks/sidebar';
+@import 'blocks/main';

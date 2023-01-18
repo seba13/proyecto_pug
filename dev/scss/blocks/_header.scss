@@ -1,0 +1,16 @@
+
+
+
+.header 
+{
+    padding: 20px 0;
+    @include laptop
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: royalblue;
+        grid-column: 2/3;
+        grid-row: 1/2 ;
+    }
+}
